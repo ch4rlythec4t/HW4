@@ -1,7 +1,7 @@
 ﻿using System;
 class Program
 {
-    static int PowNatural(int Num, int Pow)
+    static double PowNatural(int Num, int Pow)
     {
         int result = 1;
         for (int i = 1; i <= Pow; i++)
@@ -17,7 +17,7 @@ class Program
         Console.Write("Введите натуральную степень: ");
         int B = Convert.ToInt32(Console.ReadLine());
 
-        int Result = PowNatural(Num: A, Pow: B);
+        double Result = PowNatural(Num: A, Pow: B);
         Console.WriteLine($"Результат: {Result}");
     }
 }
